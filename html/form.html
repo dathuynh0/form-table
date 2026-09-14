@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form điền thông tin</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container p-4">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./form.html">Form thông tin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./table.html">Bảng sinh viên</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main class="container mt-5 min-vh-100 d-flex flex-column align-items-center">
+        <form style="width: 500px;" class="d-flex flex-column rounded bg-info p-4 gap-2">
+            <h1 class="text-center fs-4">Vui lòng điền đầy đủ thông tin</h1>
+            <label for="txtHoVaTen" class="form-label w-100">
+                Họ và tên:
+                <input type="text" class="form-control" id="txtHoVaTen" placeholder="Họ và tên"/>
+            </label>
+            <label for="txtMSSV" class="form-label w-100">
+                Mã số sinh viên:
+                <input type="text" class="form-control" id="txtMSSV" placeholder="Mã số sinh viên"/>
+            </label>
+            <label for="txtQueQuan" class="form-label w-100">
+                Quê quán:
+                <input type="text" class="form-control" id="txtQueQuan" placeholder="Quê quán"/>
+            </label>
+            <label for="txtNgaySinh" class="form-label w-100">
+                Ngày sinh:
+                <input type="date" class="form-control" id="txtNgaySinh"/>
+            </label>
+            <div class="d-flex gap-3 justify-content-end">
+                <button type="reset" class="btn btn-danger">Xóa</button>
+                <button type="submit" id="submitBtn" class="btn btn-primary">Gửi</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="bg-primary p-5">
+        <div class="text-center">
+            <p>&copy; 2026 Website của Huỳnh Chí Đạt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/form.js"></script>
+</body>
+</html>
